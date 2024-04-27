@@ -1,0 +1,44 @@
+# Configuración de TailwindCSS
+
+Este archivo `tailwind.config.ts` es la configuración principal de TailwindCSS para el proyecto. Aquí es donde se definen las personalizaciones y extensiones del sistema de diseño de Tailwind.
+
+```typescript
+import type { Config } from "tailwindcss"
+
+const config = {
+  darkMode: ["class"], // Modo oscuro basado en la clase
+  content: [ // Rutas de los archivos que Tailwind debe escanear para las clases utilizadas
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+  ],
+  prefix: "", // Prefijo para las clases de Tailwind
+  theme: { // Personalizaciones del tema
+    container: { // Configuración del contenedor
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
+    extend: { // Extensiones del tema
+      colors: { // Colores personalizados
+        // ...
+      },
+      borderRadius: { // Radio de borde personalizado
+        // ...
+      },
+      keyframes: { // Animaciones personalizadas
+        // ...
+      },
+      animation: { // Configuración de la animación
+        // ...
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")], // Plugins de Tailwind
+} satisfies Config
+
+export default config
+```

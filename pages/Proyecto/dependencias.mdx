@@ -1,0 +1,42 @@
+# Archivo `package.json`
+
+Este archivo `package.json` es el manifiesto del proyecto. Define las dependencias, scripts y metadatos del proyecto.
+
+```json
+{
+  "name": "colab_tools", // El nombre del proyecto.
+  "version": "0.1.0", // La versión actual del proyecto.
+  "private": true, // Este campo evita que el proyecto sea publicado accidentalmente en el registro de npm.
+  "scripts": { // Los scripts que se pueden ejecutar con `npm run`.
+    "dev": "next dev", // Inicia el servidor de desarrollo de Next.js.
+    "build": "next build", // Construye la aplicación para producción.
+    "start": "next start", // Inicia el servidor de producción de Next.js.
+    "lint": "next lint" // Ejecuta el linter en el código del proyecto.
+  },
+  "dependencies": { // Las dependencias necesarias para ejecutar la aplicación.
+    "@radix-ui/react-dropdown-menu": "^2.0.6", // Un componente de menú desplegable para React.
+    "@radix-ui/react-slot": "^1.0.2", // Un componente de ranura para React.
+    "class-variance-authority": "^0.7.0", // Una biblioteca para manejar la autoridad de la variante de clase.
+    "clsx": "^2.1.0", // Una biblioteca para combinar nombres de clases.
+    "framer-motion": "^11.0.28", // Una biblioteca para animaciones en React.
+    "lucide-react": "^0.368.0", // Un conjunto de iconos para React.
+    "next": "14.2.1", // El marco de trabajo de Next.js.
+    "next-themes": "^0.3.0", // Una biblioteca para manejar temas en Next.js.
+    "react": "^18", // La biblioteca de React.
+    "react-dom": "^18", // El renderizador de DOM para React.
+    "react-icons": "^5.1.0", // Un conjunto de iconos para React.
+    "tailwind-merge": "^2.2.2", // Una biblioteca para combinar clases de Tailwind.
+    "tailwindcss-animate": "^1.0.7" // Un plugin de animación para TailwindCSS.
+  },
+  "devDependencies": { // Las dependencias necesarias para el desarrollo.
+    "@types/node": "^20", // Las definiciones de tipos para Node.js.
+    "@types/react": "^18", // Las definiciones de tipos para React.
+    "@types/react-dom": "^18", // Las definiciones de tipos para ReactDOM.
+    "eslint": "^8", // El linter de JavaScript.
+    "eslint-config-next": "14.2.1", // La configuración de ESLint para Next.js.
+    "postcss": "^8", // Un procesador de CSS.
+    "tailwindcss": "^3.4.1", // El marco de trabajo de TailwindCSS.
+    "typescript": "^5" // El compilador de TypeScript.
+  }
+}
+```

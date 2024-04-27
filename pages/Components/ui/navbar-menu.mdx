@@ -1,0 +1,83 @@
+## Menu
+
+El componente `Menu` es un contenedor para los elementos del menú.
+
+### Propiedades
+
+- `setActive`: Una función que se utiliza para establecer el elemento del menú activo.
+- `children`: Los elementos hijos del componente.
+
+```tsx
+export const Menu = ({
+  setActive,
+  children,
+}: {
+  setActive: (item: string | null) => void;
+  children: React.ReactNode;
+}) => {
+  // código del componente
+};
+```
+
+## ProductItem
+
+El componente `ProductItem` representa un producto individual en el menú.
+
+### Propiedades
+
+- `title`: El título del producto.
+- `description`: La descripción del producto.
+- `href`: El enlace al producto.
+- `src`: La fuente de la imagen del producto.
+
+```tsx
+export const ProductItem = ({
+  title,
+  description,
+  href,
+  src,
+}: {
+  title: string;
+  description: string;
+  href: string;
+  src: string;
+}) => {
+  // código del componente
+};
+```
+
+## HoveredLink
+
+El componente `HoveredLink` es un enlace que cambia de color cuando se pasa el cursor sobre él.
+
+### Propiedades
+
+- `children`: Los elementos hijos del componente.
+- `...rest`: Cualquier otra propiedad que se quiera pasar al componente.
+
+```tsx 
+export const HoveredLink = ({ children, ...rest }: any) => {
+  // código del componente
+};
+```
+
+## HoveredButton
+
+El componente `HoveredButton` es un botón que cambia de color cuando se pasa el cursor sobre él.
+
+### Propiedades
+
+- `children`: Los elementos hijos del componente.
+- `onClick`: La función que se ejecuta cuando se hace clic en el botón.
+
+```tsx
+interface HoveredButtonProps {
+  children: React.ReactNode;
+  onClick: () => void;
+}
+
+
+export const HoveredButton: React.FC<HoveredButtonProps> = ({ children, onClick }) => {
+  // código del componente
+};
+```

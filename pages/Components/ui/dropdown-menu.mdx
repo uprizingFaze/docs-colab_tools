@@ -1,0 +1,97 @@
+# Dropdown Menu
+
+Este módulo proporciona una serie de componentes para crear un menú desplegable personalizado.
+
+## Componentes
+
+### `DropdownMenu`
+
+El componente raíz del menú desplegable.
+
+### `DropdownMenuTrigger`
+
+El componente que desencadena la apertura del menú desplegable.
+
+### `DropdownMenuContent`
+
+El componente que contiene el contenido del menú desplegable.
+
+### `DropdownMenuItem`
+
+Un componente que representa un elemento individual en el menú desplegable.
+
+### `DropdownMenuCheckboxItem`
+
+Un componente que representa un elemento de menú que es una casilla de verificación.
+
+### `DropdownMenuRadioItem`
+
+Un componente que representa un elemento de menú que es un botón de opción.
+
+### `DropdownMenuLabel`
+
+Un componente que representa una etiqueta en el menú desplegable.
+
+### `DropdownMenuSeparator`
+
+Un componente que representa un separador en el menú desplegable.
+
+### `DropdownMenuShortcut`
+
+Un componente que representa un atajo en el menú desplegable.
+
+### `DropdownMenuGroup`
+
+Un componente que agrupa elementos del menú desplegable.
+
+### `DropdownMenuPortal`
+
+Un componente que permite renderizar el menú desplegable en un nodo DOM diferente.
+
+### `DropdownMenuSub`
+
+Un componente que representa un submenú dentro del menú desplegable.
+
+### `DropdownMenuSubContent`
+
+Un componente que contiene el contenido de un submenú.
+
+### `DropdownMenuSubTrigger`
+
+El componente que desencadena la apertura de un submenú.
+
+### `DropdownMenuRadioGroup`
+
+Un componente que agrupa varios `DropdownMenuRadioItem`.
+
+## Uso
+
+Aquí hay un ejemplo de cómo se pueden usar estos componentes para crear un menú desplegable:
+
+```tsx
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  // importar otros componentes según sea necesario
+} from './dropdown-menu';
+
+function Example() {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger>
+        Abrir menú
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        <DropdownMenuItem>
+          Opción 1
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          Opción 2
+        </DropdownMenuItem>
+        {/* agregar más elementos de menú según sea necesario */}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
